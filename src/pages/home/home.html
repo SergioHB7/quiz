@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Registrate
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input [(ngModel)]= "user" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input [(ngModel)]= "pass" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button (click) = "clickRegistrar()" ion-button>Registrarse</button>
+  <button (click) = "clickIniciar()" ion-button>Agregar</button>
+  <button (click) = "clickAgregar()" ion-button>Agregar</button>
 </ion-content>
